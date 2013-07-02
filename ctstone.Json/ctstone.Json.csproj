@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DynamicDictionary.cs" />
+    <Compile Include="DynamicList.cs" />
+    <Compile Include="JsonClient.cs" />
     <Compile Include="JsonTokenizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
