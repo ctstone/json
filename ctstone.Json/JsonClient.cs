@@ -33,7 +33,7 @@ namespace ctstone.Json
         private HttpWebRequest CreateRequest_GET(string relUri, IEnumerable<KeyValuePair<string, object>> parameters = null)
         {
             Uri uri = GetUri(relUri, parameters);
-            HttpWebRequest request = WebRequest.CreateHttp(uri);
+            HttpWebRequest request = WebRequest.Create(uri) as HttpWebRequest;
             if (HttpRequesting != null)
                 HttpRequesting(this, new HttpRequestEventArgs(request));
             request.Method = "GET";

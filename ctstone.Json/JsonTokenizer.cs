@@ -208,7 +208,7 @@ namespace ctstone.Json
                         object value = Parse(json, member_type);
                         Trace.WriteLine(String.Format("Object value is {0}", value));
                         if (prop != null)
-                            prop.SetValue(obj, value);
+                            prop.SetValue(obj, value, null);
                     }
                     json.Chomp();
                 }
